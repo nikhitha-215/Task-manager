@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>TaskFlow Manager</h1>
+        <div class="task-input-container">
+            <input type="text" id="task-input" placeholder="Type a task and press Enter...">
+            <input type="date" id="task-date">
+            <select id="task-category">
+                <option value="todo">To Do</option>
+                <option value="inprogress">In Progress</option>
+                <option value="done">Done</option>
+            </select>
+            <button id="clear-all-btn">Clear All</button>
+        </div>
+    </header>
+
+    <main class="board">
+        <div class="column" id="todo-column">
+            <h2>To Do <span id="todo-count" class="count-badge">0</span></h2>
+            <div class="task-list" id="todo"></div>
+        </div>
+        <div class="column" id="inprogress-column">
+            <h2>In Progress <span id="inprogress-count" class="count-badge">0</span></h2>
+            <div class="task-list" id="inprogress"></div>
+        </div>
+        <div class="column" id="done-column">
+            <h2>Done <span id="done-count" class="count-badge">0</span></h2>
+            <div class="task-list" id="done"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
